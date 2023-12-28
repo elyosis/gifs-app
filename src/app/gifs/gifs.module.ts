@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { CardListComponent } from './components/card-list/card-list.component';
+import { CardComponent } from './components/card/card.component';
 
 
 
@@ -11,7 +12,8 @@ import { CardListComponent } from './components/card-list/card-list.component';
   declarations: [
     HomepageComponent,
     SearchBarComponent,
-    CardListComponent
+    CardListComponent,
+    CardComponent
   ],
   imports: [
     CommonModule
