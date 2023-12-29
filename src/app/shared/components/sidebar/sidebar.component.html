@@ -2,13 +2,22 @@
   <h1 class="text-light">GifsApp</h1>
   <hr class="border-white" />
 
-  <div class="list-group list-reset">
+  <div class="d-flex flex-column justify-content-between gap-3">
+    <div class="list-group list-reset">
+      <button
+        class="list-group-item list-group-item-action"
+        *ngFor="let tag of tagsHistory"
+        (click)="clickTag(tag)"
+      >
+        {{ tag | titlecase }}
+      </button>
+    </div>
     <button
-      class="list-group-item list-group-item-action"
-      *ngFor="let tag of tagsHistory"
-      (click)="clickTag(tag)"
+      *ngIf="tagsHistory.length > 0"
+      class="btn btn-outline-danger"
+      (click)="resetHistory()"
     >
-      {{ tag | titlecase }}
+      Reset search history
     </button>
   </div>
 </div>

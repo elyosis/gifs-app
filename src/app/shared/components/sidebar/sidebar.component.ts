@@ -16,4 +16,8 @@ export class SidebarComponent {
   clickTag(tag: string) {
     this.gifsService.addTag(tag);
   }
+
+  resetHistory():void {
+    this.gifsService.resetTagHistory();
+  }
 }

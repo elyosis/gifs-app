@@ -9,7 +9,6 @@ export class GifsService {
 
   public gifsList: Gif[] = [];
   private _tagsHistory: string[] = [];
-  // TODO: delete key once the app's done
   private apiKey: string = "Bd744kPTO3Ouh7vZAYYGbRlpt0bBknle";
   private url: string = "https://api.giphy.com/v1/gifs/search";
 
@@ -44,6 +43,12 @@ export class GifsService {
     } else {
       return;
     }
+  }
+
+  resetTagHistory():void {
+    this.gifsList = [];
+    this._tagsHistory = [];
+    localStorage.removeItem("history");
   }
 
   addTag(newTag: string): void {
