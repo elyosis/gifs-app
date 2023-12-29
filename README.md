@@ -1,27 +1,7 @@
 # GifsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
+Simple dashboard Angular (version 16) app that takes a query and returns 10 gifs matching the search terms. To obtain the gifs, the [GIPHY API](https://developers.giphy.com/) is used (the key included in this repo has already been deactivated, so obtaining a new one would be required to fully test the app locally).
 
-## Development server
+The application also keeps track of the search history for up to the last 10 queries, using `localStorage` to persist the data after closing the app. The user can delete the search history at any point through a dedicated button.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project is part of @Klerith's Angular course.
