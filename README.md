@@ -4,4 +4,4 @@ Simple dashboard Angular (version 16) app that takes a query and returns 10 gifs
 
 The application also keeps track of the search history for up to the last 10 queries, using `localStorage` to persist the data after closing the app. The user can delete the search history at any point through a dedicated button.
 
-This project is part of @Klerith's Angular course.
+This project is part of [Fernando Herrera](https://github.com/Klerith/)'s Angular course.
